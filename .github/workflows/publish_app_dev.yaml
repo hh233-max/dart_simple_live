@@ -20,6 +20,7 @@ jobs:
         with:
           ref: dev
           token: ${{ secrets.MY_PAT }}
+          fetch-depth: 0
       # APK签名设置
       - name: Download Android keystore
         id: android_keystore
@@ -163,6 +164,7 @@ jobs:
         with:
           ref: dev
           token: ${{ secrets.MY_PAT }}
+          fetch-depth: 0
       # 设置Flutter环境
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
@@ -213,6 +215,7 @@ jobs:
         with:
           ref: dev
           token: ${{ secrets.MY_PAT }}
+          fetch-depth: 0
       # 设置Flutter环境
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
